@@ -15,7 +15,7 @@ describe('foo', function(){
   });
 
 
-  it('it should display the name from the api', function(){
+  it('it should display the name from the model', function(){
     var result = document.querySelector('foo > p');
 
     expect(result.textContent).to.be('Hello, bob!')
