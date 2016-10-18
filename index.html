@@ -11,13 +11,9 @@
     <script src="foo.tag" type="riot/tag"></script>
     <script src="node_modules/riot/riot%2Bcompiler.js"></script>
     <script>
-      var api = {
-        name: function(){
-          return "derp"
-        }
-      };
-
-      riot.mount('foo', api);
+      var model = riot.observable();
+      model.name = 'derp'
+      riot.mount('foo', model);
     </script>
   </body>
 </html>
