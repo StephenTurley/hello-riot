@@ -32,6 +32,11 @@ module.exports = function(config) {
       '**/*.tag': ['riot']
     },
 
+    riotPreprocessor: {
+      options: {
+        type: 'es6'
+      }
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
